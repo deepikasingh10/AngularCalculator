@@ -1,0 +1,98 @@
+/* ===== Styling For Calculator Body ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Styling for calculator app */
+.app {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  height: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Styling for icons */
+.icons {
+  color: var(--color6);
+  margin-top: 8px;
+  font-size: 0.7rem;
+  font-weight: 400px;
+}
+
+/* Using a display flex for calculator */
+.calculator {
+  background-color:var(--bg3);
+  width: 100%;
+  max-width: 250px;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+/* Styling for the toggle button */
+.theme-toggle {
+  width: 54px;
+  height: 23px;
+  background-color: var(--bg4);
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.theme-toggle span {
+  width: 20px;
+  height: 20px;
+  background-color: var(--bg5);
+  display: inline-block;
+  border-radius: 50px;
+  margin-left: 3px;
+  transition: 0.2s;
+}
+
+/* Styling for historybody */
+.historybody {
+  float: right;
+  width: 250px;
+  height: 520px;
+  background-color: var(--bg1);
+  border-radius: 1.5rem;
+  margin-top: 6px;
+  padding: 10px;
+  box-shadow: 0px 3px 5px #444444 inset;
+}
+
+/* Styling for history content */
+.history {
+  color: var(--color5);
+  width: 200px;
+  height: 420px;
+  resize: none;
+  overflow: hidden;
+  margin-top: 15px;
+  margin-left: 15px;
+  /* use this for the next line */
+  white-space: pre-line;
+}
+
+/* Styling for scrollbar */
+#scrollbar {
+  width: 220px;
+  height: 450px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  background-color:var(--bg2);
+}

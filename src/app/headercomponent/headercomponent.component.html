@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<div class="app">
+
+	<div class="calculator">
+		<!-- Parent class for icons -->
+		<div class="icons">
+			<i style="padding-left: 20px;  font-size: smaller;"><b>9:41</b></i>
+			<i style="padding-left: 140px; font-size: smaller;" class="fa fa-signal" aria-hidden="true"></i>
+			<i style="margin-left: 4px; margin-right: 4px;" class="fa fa-wifi" aria-hidden="true"></i>
+			<i class="fa fa-battery-full" aria-hidden="true"></i>
+		</div>
+
+		<!-- Class for theme-toggle -->
+		<div class="theme-toggle" (click)="themetoggle()"><span></span></div>
+
+		<!-- ======== Calculator Button Component ======== -->
+		<app-buttoncomponent #child></app-buttoncomponent>
+	</div>
+	<br>
+	<hr>
+
+	<!-- ======== Calculator History Component ======== -->
+	<div class="historybody">
+		<h4 style="text-align: center; color: #EB6666; text-decoration: underline;font-family: monospace; font-size: 1rem; ">
+			CALCULATION HISTORY</h4>
+		<div class="history" id="scrollbar">{{child.newhistory}}</div>
+	</div>
+	<!-- <app-historycomponent></app-historycomponent> -->
+
+	<router-outlet></router-outlet>

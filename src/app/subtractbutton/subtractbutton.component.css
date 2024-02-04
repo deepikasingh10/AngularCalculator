@@ -1,0 +1,12 @@
+#key3{
+    color:  #EB6666; 
+    font-size: 1rem;
+    font-weight: 700;
+    height: 43px;
+    width: 43px;
+    text-align: center;
+    background-color: var(--color2);
+    border-radius: 1rem;
+    border: none;
+}
+

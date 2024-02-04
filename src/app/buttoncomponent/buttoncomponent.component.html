@@ -1,0 +1,33 @@
+<!-- ========= Calculator Display Component ========= -->
+<app-displaycomponent [showInput]="input" [showOutput]="result"></app-displaycomponent>
+
+<!-- ========== Calculator Button Start ========== -->
+<!-- Parent class for button -->
+<div class="keys">
+
+    <app-clearbutton (click)="clear()"></app-clearbutton>
+    <app-mbutton (click)="savememory()"></app-mbutton>
+    <app-percentilebutton (click)="pressKey('%')"></app-percentilebutton>
+    <app-dividebutton (click)="pressKey('/')"></app-dividebutton>
+    <app-button7 (click)="pressKey('7')"></app-button7>
+    <app-button8 (click)="pressKey('8')"></app-button8>
+    <app-button9 (click)="pressKey('9')"></app-button9>
+    <app-multiplybutton (click)="pressKey('*')"></app-multiplybutton>
+    <app-button4 (click)="pressKey('4')"></app-button4>
+    <app-button5 (click)="pressKey('5')"></app-button5>
+    <app-button6 (click)="pressKey('6')"></app-button6>
+    <app-subtractbutton (click)="pressKey('-')"></app-subtractbutton>
+    <app-button1 (click)="pressKey('1')"></app-button1>
+    <app-button2 (click)="pressKey('2')"></app-button2>
+    <app-button3 (click)="pressKey('3')"></app-button3>
+    <app-addbutton (click)="pressKey('+')"></app-addbutton>
+    <app-backspacebutton (click)="backspace()"></app-backspacebutton>
+    <app-button0 (click)="pressKey('0')"></app-button0>
+    <app-decimalbutton (click)="pressKey('.')"></app-decimalbutton>
+    <app-equalbutton (click)="equals()"></app-equalbutton>
+
+<!-- ========== Calculator Button End ========== -->
+
+<!-- Horizontal Line -->
+    <div class="bar"></div>
+</div>

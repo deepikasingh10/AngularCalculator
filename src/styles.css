@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+ [light-theme="light"]{
+      background-color: white;
+      --color1:#262933;
+      --color2:#22252D;
+      --color3:#FFF;
+      --color4:white;
+      --color5:white;
+      --bg1:#262933;
+      --bg2:#262933;
+      --color6:white;
+      --bg3:#22252D;
+      --bg4:#fff;
+      --bg5:#000;
+      --primary:0px 3px 5px #313030 inset;
+    }
+    [dark-theme="dark"]{
+        background-color: black;
+        --primary:0px 3px 5px #cfc8c8 inset;
+      }
+      [dark-theme="dark"] {
+        --color6: black;
+      }
+      [dark-theme="dark"]{
+        --color4: black;
+      }
+      [dark-theme="dark"] {
+        --color1: rgb(255, 255, 255);
+      }
+      [dark-theme="dark"]{
+        --color2: #fbfcfa;
+      }
+      [dark-theme="dark"] .keys .key span {
+        --color3: #000;
+      }
+      [dark-theme="dark"]{
+        --bg3: #fff;
+      }
+      [dark-theme="dark"] {
+        --bg4: #262933;
+      }
+      [dark-theme="dark"] {
+        --bg5: #fff;
+      }
+      [dark-theme="dark"] {
+        --color5: black;
+      }
+      [dark-theme="dark"] {
+        --bg1: #fbfcfa;
+      }
+      [dark-theme="dark"] {
+        --bg2: #fbfcfa;
+      }
+   
+    
